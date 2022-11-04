@@ -345,6 +345,7 @@ struct Parser{
         {
             compInfo->in_file.SkipUpto("}");
             past_token.type=RIGHT_BRACE;
+            past_token.str[0]='}';
             return;
         }
 
